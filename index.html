@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        
+'use strict' //kol kas nezinau ka daro
+
+//amziaus kintamasis, jo reiksme galima pakeisti betkada
+let Age = 24; 
+//eilute, skirta programos isvedimui i ekrana
+console.log(Age);
+let antras, pirmas = "tekstas"
+console.log(pirmas);
+console.log(antras);
+// const reiksme deklaruojama viena karta ir veliau negali buti keiciama
+const SKYSTIS = 12.1, NAME = "Henrikas";
+console.log(SKYSTIS);
+console.log(NAME);
+// Identifier turi prasideti $, raide arba _ 
+// Literals padeda sukurti Identifier su reiksme
+let Kint = "labas" + " vakaras" // galima ir sujungti reiksmes kintamajam
+console.log(Kint);
+const inf = Infinity;
+const ninf = Infinity;
+const nan = NaN;
+// string gali buti rasomas 'tokiuose' ir "tokiuose"
+// Boolean gali tureti tik dvi reiksmes true arba false
+let Do = true;
+let Dont = false; // du Boolean aprasyti
+//aprasau symbol su konstruktoriumi, kadangi tai konstruktorius reikia naudoti skliaustus
+const blue = Symbol("kazkas");
+const white =  Symbol("color white")
+
+blue === white //false gausim, nes kiekvienas is ju unikalus
+
+//reiksme == null; //priskiriam, kad reiksme yra lygi nuliui
+//reiksme2 = undefined; //gaunam, kad reiksme yra tiesiog unfefined
+
+// objektai gali buti Array, Date, Regular Expression, Map and WeakMap, Set and WeakSet
+const obj = {}; 
+obj.prop= 25;//sukuriam objektui property
+console.log(obj.prop);
+    </script>
+</body>
+</html>
+
+
+
