@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maratono registracija</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <form action="/nukreipia">
+        <!-- reikalingas beveik visur kur yra laukai arba mygtukai-->
+        <div>
+            <label for="name">First name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name here">
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname" name="lastname" required placeholder="Enter your lastname here">
+        </div>
+        <div>
+            <section>
+                <p>Select a Race:</p>
+                <input type="radio" required id="fun" name="racetype" value="funrun">
+                <label for="fun">Fun Run</label><br>
+                <input type="radio" id="half" name="racetype" value="halfrun">
+                <label for="half">Half Run</label><br>
+                <input type="radio" id="full" name="racetype" value="fullrun">
+                <label for="full">Full Run</label><br>
+            </section>
+            <section>
+                <label for="emailas">E-mail address</label>
+                <input type="email" id="emailas" name="email" required placeholder="Type your email here">
+                <label for="password">Password</label>
+                <input type="password" required id="password" name="Password" placeholder="Type your password here"
+                    minlength="8">
+            </section>
+            <section>
+                <label for="age">Select age group: </label>
+                <select name="age" id="age" required>
+                    <option value="<18">less than 18</option>
+                    <option value="18-30">18-30</option>
+                    <option value="30+">30 and more</option>
+                </select>
+            </section>
+            <button>Register</button>
+
+
+        </div>
+    </form>
+</body>
+
+</html>
